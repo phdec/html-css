@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'grandcru';
+            src: url(fontes/GrandCru-LightS.otf) format('opentype');
+            font-weight:normal;
+            font-style:normal;
+
+            /*Tipos format: 
+            -open type
+            -truetype
+            -embedded-opentype
+            -truetype-aat(Apple Advanced Typographic)
+            -svg
+            */
+        }
+
+        @font-face {
+            font-family: 'dirty';
+            src: url(fontes/Dirtyline\ 36daysoftype\ 2022.otf) format('opentype');
+        }
+        body {
+            font-family: dirty, grandcru, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae nihil fuga molestiae doloremque vero voluptas inventore, et quidem unde facere in neque illum similique tempora dolores, officia, pariatur numquam!</p>
+</body>
+</html>

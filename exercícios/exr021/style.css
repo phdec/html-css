@@ -1,0 +1,49 @@
+@charset "URL-8";
+
+@font-face {
+    font-family: grandcru;
+    src: url(fontes/GrandCru-LightS.otf);
+}
+
+body {
+    margin: 0px;
+}
+
+header > div {
+    width: 100%;
+    background-color: #ED9FAB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#home {
+    display: flex;
+    align-items: center;
+    margin: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 17px;
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: rgb(230, 230, 230);
+}
+
+img {
+    display: block;
+    height: 40px;
+    margin-right: 4px;
+}
+
+h1 {
+    display: block;
+    color: white;
+    font-family: grandcru;
+    font-size: 25px;
+    margin: 0px;
+}

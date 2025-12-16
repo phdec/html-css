@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* HTML: id = # :CSS
+HTML: class = . :CSS
+*/
+
+body {
+    background-color: rgb(39, 39, 39);
+    font-family: sans-serif;
+}
+
+h1#principal{
+    background-color: #dc9da9;
+    color:white;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color:blue;
+}
+
+p {
+    color: white;
+}
+
+h2.avançado {
+    color: red;
+}
