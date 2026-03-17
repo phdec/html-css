@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peaga</title>
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url(fontes/Inter-VariableFont_opsz\,wght.ttf);
+        }
+        
+        body {
+            font-family: Inter;
+        }
+
+        input, button {
+            border-radius: 5px;
+            border: 0;
+            background-color: whitesmoke;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de idade pelo ano</h1>
+    <form onsubmit="inicio()" method="post" autocomplete="on">
+        
+        <p>
+            <label for="nome">Digite seu nome: </label>
+            <input type="text" name="nome" id="nome" required>
+        </p>
+        <p>
+            <label for="ano">Em que ano você nasceu?: </label>
+            <input type="number" id="ano" min="0" max="2026" required>
+            <button type="button" onclick="calcIdade()">Calcular</button>
+        </p>
+        <p id="texto">
+            <output id="idade"></output>
+        </p>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+    <p id="tj"></p>
+    <script>
+        function calcIdade() {
+            let anoAtual = new Date().getFullYear()
+            let nome = document.getElementById("nome").value 
+            idade.innerHTML = Number(anoAtual) - Number(ano.value)
+            document.getElementById("texto").innerHTML = "Este ano você completa " + idade.innerHTML + " anos. Parabéns!"
+        }
+        
+        function inicio(){
+            document.getElementById("tj").innerHTML = "Aperta pra calcular"
+        }
+    </script>
+</body>
+</html>

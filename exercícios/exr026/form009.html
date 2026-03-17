@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="num">Número: </label>
+            <input type="range" name="num" id="num" min="0" max="15" oninput="val.innerHTML = Number(num.value)">
+        </p>
+
+        <p>
+            <label for="val">Valor: </label>
+            <output name="val" id="val">
+        </p>
+        
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
