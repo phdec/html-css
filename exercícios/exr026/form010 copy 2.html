@@ -18,7 +18,7 @@
             border-radius: 5px;
             border: 0;
             background-color: whitesmoke;
-            padding: 5px;
+            padding: 7px;
         }
     </style>
 </head>
@@ -35,12 +35,15 @@
             <input type="number" id="ano" min="0" max="2026" required>
             <button type="button" onclick="calcIdade()">Calcular</button>
         </p>
+        
         <p id="texto">
-            <output id="idade"></output>
         </p>
 
+         <div><output id="iidade"></output></div>
+
         <div>
-            <input type="submit" value="limpar">
+            <input type="submit">
+            <input type="reset" value="limpar">
         </div>
     </form>
     <script>
@@ -49,7 +52,9 @@
             let nome = document.getElementById("nome").value
             let ano = document.getElementById("ano").value
             let idade = Number(anoAtual) - Number(ano)
-            document.getElementById("texto").innerHTML = nome + ", este ano você completa " + idade + " anos. Parabéns!"
+            iidade.innerHTML = idade
+            
+            document.getElementById("texto").innerHTML = nome + ", este ano você completa " + iidade.innerHTML + " anos. Parabéns!"
         }
     </script>
 </body>
