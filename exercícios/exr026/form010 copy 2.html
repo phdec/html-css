@@ -24,7 +24,7 @@
 </head>
 <body>
     <h1>Calculadora de idade pelo ano</h1>
-    <form onsubmit="inicio(); return false;" method="post" autocomplete="on">
+    <form method="post" autocomplete="on">
         
         <p>
             <label for="nome">Digite seu nome: </label>
@@ -40,11 +40,9 @@
         </p>
 
         <div>
-            <input type="submit" value="enviar">
-            <input type="reset" value="limpar">
+            <input type="submit" value="limpar">
         </div>
     </form>
-    <p id="tj"></p>
     <script>
         function calcIdade() {
             let anoAtual = new Date().getFullYear()
@@ -52,10 +50,6 @@
             let ano = document.getElementById("ano").value
             let idade = Number(anoAtual) - Number(ano)
             document.getElementById("texto").innerHTML = nome + ", este ano você completa " + idade + " anos. Parabéns!"
-        }
-        
-        function inicio(){
-            document.getElementById("tj").innerHTML = "Aperta pra calcular"
         }
     </script>
 </body>
