@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Ham</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/screeng.css">
+</head>
+<body>
+    <header>
+        <h1>Menu Habúrguer</h1>
+        <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
+        <menu id="list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">página</a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum molestias totam, repellat corporis voluptates, dolorem quasi amet similique dignissimos accusamus aliquam qui debitis quisquam est quis alias ut reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod culpa autem quia voluptas deleniti obcaecati esse delectus nostrum magni neque voluptates cum adipisci, eaque animi provident quam nam dolorum. Voluptates!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatum, in aperiam est natus possimus saepe ullam numquam deleniti amet ad quam reiciendis eligendi fugit illum incidunt voluptatem debitis? Libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi temporibus vitae neque ullam cupiditate aliquam dolorum corporis harum quas, doloribus soluta excepturi illo nulla minus odit voluptas cum doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum corporis ipsa quos in perspiciatis blanditiis pariatur fugiat reprehenderit aliquid reiciendis. Ipsa doloremque nulla animi, laudantium atque odit nesciunt porro consequatur.</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if (list.style.display == 'block'){
+                list.style.display = 'none'
+            }
+            else{
+                list.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
