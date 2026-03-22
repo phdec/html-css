@@ -1,1 +1,30 @@
 @charset "UTF-8";
+
+@media print {
+    header {
+        display: none;
+    }
+    header > h1 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    menu {
+        display: block;
+    }
+    header > i#menu {
+    display: none;
+    }
+    menu > ul {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    menu > ul > li > a {
+        border-top: none;
+        padding: 10px;
+    }
+    main {
+        max-width: 800px;
+    }
+}
