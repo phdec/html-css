@@ -17,17 +17,19 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo! Faça seu login.</p>
-                <form action="#" method="post">
+                <form action="#" method="post" autocomplete="on">
                     <div class="form">
                         <i class="material-icons">person</i>
-                        <label for="email"></label>
-                        <input type="text" id="email" placeholder="Digite seu e-mail">
+                        <input type="text" id="email" placeholder="Digite seu e-mail" autocomplete="email" required minlength="1" maxlength="30">
+                        <label for="email">Login</label>
                     </div>
                     <div class="form">
                         <i class="material-icons">key</i>
-                        <label for="senha"></label>
-                        <input type="password" id="senha" placeholder="Digite sua senha">
+                        <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="3" maxlength="30">
+                        <label for="senha">Senha</label>
                     </div>
+                    <input type="submit" value="Entrar">
+                    <button type="button">Esqueci a senha</button>
                 </form>
             </div>
         </section>

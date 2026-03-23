@@ -43,4 +43,13 @@
         width: 43%;
         transition-duration: .3s;
     }
+
+    div#formulario > h1 {
+    text-align: center;
+    }
+
+    div#formulario > p {
+        text-align: center;
+        font-size: 1em;
+    }
 }
