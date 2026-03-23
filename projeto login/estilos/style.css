@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
@@ -27,10 +27,12 @@ section#login {
     overflow: hidden;
     background-color: white;
     display: inline-block;
-    width: 60vw;
+    width: 70vw;
     height: 70vh;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.671) 0px 0px 10px;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 div#img {

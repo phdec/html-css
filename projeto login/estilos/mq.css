@@ -4,4 +4,42 @@
     section#login {
         width: 90vw;
     }
+
+    div#formulario {
+        float: right;
+        width: 65%;
+        transition-duration: .3s;
+    }
+
+    div#img {
+        float: left;
+        height: 100%;
+        width: 35%;
+        transition-duration: .3;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 90vw;
+        max-width: 980px;
+    }
+
+    div#formulario {
+        float: right;
+        width: 57%;
+        transition-duration: .3s;
+    }
+
+    div#img {
+        float: left;
+        height: 100%;
+        width: 43%;
+        transition-duration: .3s;
+    }
 }
