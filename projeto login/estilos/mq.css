@@ -4,6 +4,8 @@
     section#login {
         width: 90vw;
         max-width: 980px;
+        max-height: 350px;
+        overflow: hidden;
     }
 
     div#formulario {
@@ -18,17 +20,24 @@
         width: 35%;
         transition-duration: .3;
     }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 992px) {
 
     body {
+        min-height: 100%;
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         width: 90vw;
         max-width: 980px;
+        max-height: 400px;
+        overflow: hidden;
     }
 
     div#formulario {
@@ -45,7 +54,8 @@
     }
 
     div#formulario > h1 {
-    text-align: center;
+        text-align: center;
+        font-size: 2em;
     }
 
     div#formulario > p {

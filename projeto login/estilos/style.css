@@ -10,7 +10,8 @@
 html, body {
     background-color: #5f2c82;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 main {
@@ -24,12 +25,13 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
     background-color: white;
     display: inline-block;
     width: 70vw;
     height: 70vh;
-    min-height: 235px;
+    min-height: 240px;
     max-width: 480px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.671) 0px 0px 10px;
@@ -51,6 +53,7 @@ div#formulario {
 
 div#formulario > h1 {
     text-align: center;
+    font-size: 1.9em;
 }
 
 div#formulario > p {
@@ -68,13 +71,20 @@ div.form > i {
     color: white;
     font-size: 1.5em;
     padding: 5px;
+    transform: translate(3px, 2px);
+}
+
+div.form > input:focus-within {
+    border: none; /*coloquei qlqr coisa p salvar o trem aq*/
 }
 
 div.form > input {
     height: 100%;
+    width: calc(100% - 43px);
     border: 0px;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 11px;
+    transform: translateY(-3px); /* Sempre colocar transform no final */
 }
 
 div.form > label {
