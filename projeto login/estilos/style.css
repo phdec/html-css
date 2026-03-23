@@ -29,6 +29,7 @@ section#login {
     display: inline-block;
     width: 70vw;
     height: 70vh;
+    max-width: 480px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.671) 0px 0px 10px;
     transition: width .3s, height .3s;
@@ -49,4 +50,5 @@ div#formulario {
 
 div.form {
     background-color: blue;
+    border-radius: 10px;
 }
