@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu Flexible</h1>
+        <nav>
+            <i class="material-icons" id="botaoMenu" onclick="mostrarMenu()">menu</i>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>O que é um Menu Flexibe?</h2>
+            <p>Um Menu Flexible (geralmente criado com CSS Flexbox) é uma estrutura de navegação responsiva que organiza itens automaticamente, ajustando-se a qualquer tamanho de tela. Ele permite alinhamento horizontal/vertical, espaçamento uniforme e quebra de linha automática (wrap), ideal para layouts modernos que precisam funcionar em dispositivos móveis e desktop.</p>
+        </article>
+    </main>
+    <script>
+        function mostrarMenu() {
+            const menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        function mudouTamanho() {
+            const menu = document.getElementById('menu');
+            if (window.innerWidth > 768) {
+                menu.style.display = 'flex';
+            }
+            else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-flow: column wrap;
+    }
+
+    header > h1 {
+        margin-right: 0px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav > i#botaoMenu {
+        display: block;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        width: 100%;
+    }
+
+    nav > i#botaoMenu:hover {
+        background-color: rgb(23, 97, 172);
+    }
+
+    ul {
+        flex-flow: column nowrap;
+        display: none;
+    }
+
+    ul > li {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgb(23, 97, 172);
+    }
+
+    ul > li > a {
+        width: 100%;
+    }
+}
