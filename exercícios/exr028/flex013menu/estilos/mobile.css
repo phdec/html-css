@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 662px) {
     header {
         flex-flow: column wrap;
     }
@@ -34,6 +34,8 @@
         display: flex;
         justify-content: center;
         border-top: 1px solid rgb(23, 97, 172);
+        border-radius: 0px;
+        padding: 3px;
     }
 
     ul > li > a {
