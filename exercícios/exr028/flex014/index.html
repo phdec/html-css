@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex rev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flex Reverse</h1>
+        <p> Este é um exemplo de layout flexível com reversão. O conteúdo se organizará automaticamente da seguinte forma: <br> Imagem -> Texto <br> Texto -> Vídeo</p>
+        <p> O conteúdo deverá quebrar desta maneira de acordo com o tamanho da viewport(tela). se couber do lado, permanecerá ali, até o momento que se quebrar; então, agirá da maneira descrita anteriormente.</p>
+    </header>
+    <main>
+        <section class="flex-container">
+            <article class="media-item">
+                <div class="text">
+                    <h1>Imagem -> Texto</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minima eum voluptatibus porro nihil error. Doloremque quaerat ducimus amet repudiandae dolore quod, dolores non modi delectus molestiae facere nesciunt! Itaque.</p>
+                </div>
+                <div class="media">
+                    <img src="ingleskk.jpg" alt="Imagem 1">
+                </div>
+            </article>
+            <article class="item-media">
+                <div class="text">
+                    <h1>Texto -> Vídeo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minima eum voluptatibus porro nihil error. Doloremque quaerat ducimus amet repudiandae dolore quod, dolores non modi delectus molestiae facere nesciunt! Itaque.</p>
+                </div>
+                <div class="media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=F39bsBNFSGorSyVY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Exercício de Flexbox - Reversão</p>
+    </footer>
+</body>
+</html>
