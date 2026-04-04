@@ -39,7 +39,7 @@ article.item-media {
 }
 
 div.media {
-    flex: 1 1 400px;
+    flex: 1 1 clamp(40%, 400px, 400px);
 }
 
 div.text {
