@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container {
+            border: 3px solid black;
+            height: 500px;
+            margin: auto;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template: repeat(3, 1fr) / repeat(4, auto);
+            place-items: stretch;
+            place-content: stretch stretch;
+            gap: if(media(width < 800px): 0px; else: 1px);
+        } 
+
+        div.item{
+            border: 3px dashed blue;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.item#a {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        div.item#b {
+            grid-row: 2 / -1; /* caso inclua somente um valor, este é o de início, e o final será no próximo. */
+            grid-column: 1/ span 2; /*span = quanto cresce a partir do início; ex: span 2 = 3*/
+        }
+        div#c {
+            grid-area: 2 / 3 / -2 / -1; /* row-start / column-start / row-end / column-end*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div> 
+</body>
+</html>

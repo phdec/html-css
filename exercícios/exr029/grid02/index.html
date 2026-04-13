@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container {
+            border: 3px solid black;
+            height: 500px;
+            margin: auto;
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-rows: auto; /* grid implícito */
+            grid-auto-columns: 0.5fr; /* grid implícito */
+            /*grid-template-rows: 1fr 1fr 1fr; frações ocupam sempre o que sobra.
+            grid-template-columns: repeat(3, auto);*/
+            grid-template: repeat(3, 1fr) / repeat(3, auto);
+            /*align-items: stretch;
+            justify-items: stretch;*/
+            place-items: stretch;
+            /*align-content: stretch;
+            justify-content: stretch;*/
+            place-content: stretch stretch;
+            gap: if(media(width < 800px): 0px; else: 1px);
+        } 
+
+        div.item{
+            border: 3px dashed blue;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
