@@ -10,9 +10,9 @@
 body {
     background-color: #f0f0f0;
     height: 100vh;
-    
+
     display: grid;
-    grid-template: 1fr 0.5fr 5fr 1fr / 2fr 1fr
+    grid-template: 90px 43px 5fr 1fr / 2fr 1fr
 }   
 
 .item {
@@ -30,9 +30,11 @@ header.item {
 nav.item {
     grid-area: 2 / 1 / 3 / -1;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    display: grid;
+    grid-template: 1fr / repeat(5, auto);
+    gap: 13px;
+    place-content: center center;
+    place-items: center center;
 }
 
 nav.item > a {
@@ -61,10 +63,19 @@ nav.item > a:hover::after {
 main.item {
     grid-row: 3 / -2;
     grid-column: 1 / -2;
-    padding: 20px;
+}
+
+main.item > section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
 }
 
 aside.item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     grid-row: 3 / -2;
     grid-column: 2 / -1;
     padding: 20px;
