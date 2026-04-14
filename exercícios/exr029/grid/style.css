@@ -12,7 +12,7 @@ body {
     height: 100vh;
 
     display: grid;
-    grid-template: 90px 43px 5fr 1fr / 2fr 1fr
+    grid-template: 90px 43px 5fr 1fr / 1.7fr 1fr;
 }   
 
 .item {
@@ -50,7 +50,7 @@ nav.item > a::after {
     width: 110%;
     height: 2px;
     left: 0;
-    bottom: -11px;
+    bottom: -12px;
     background-color: white;
     transform: scaleX(0);
     transition: transform 0.2s ease-out;
